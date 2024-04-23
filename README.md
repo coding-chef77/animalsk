@@ -30,7 +30,7 @@ Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 
 ## TODO
 
-- [] Make it deploy (Vercel)
+- [x] Make it deploy (Vercel)
 - [] Make some UI
 - [] Set up database (Vercel postgres)
 - [] Attach UI to database
@@ -39,5 +39,3 @@ Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 - [] Routing/page (paralell route)
 - [] Analytics (posthog)
 - [] Ratelimiting (upstash)
-- []
-- []
