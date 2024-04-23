@@ -1,5 +1,4 @@
 import "~/styles/globals.css";
-import Link from "next/link";
 
 import { Inter } from "next/font/google";
 
@@ -22,35 +21,6 @@ function TopNav() {
   );
 }
 
-function SideNav() {
-  return (
-    <div className="fixed left-0 top-0 mt-16 flex h-full w-auto flex-col border-r border-gray-300 p-4">
-      <h2 className="text-l mb-4 font-semibold">Forum Menu</h2>
-      <ul className="flex flex-col gap-3">
-        <li>
-          <Link href="/" className="hover:text-grey-900 text-gray-700">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link href="/topics" className="text-gray-700 hover:text-gray-900">
-            Topics
-          </Link>
-        </li>
-        <li>
-          <Link href="/new-topic" className="text-gray-700 hover:text-gray-900">
-            New Topic
-          </Link>
-        </li>
-        <li>
-          <Link href="/about" className="text-gray-700 hover:text-gray-900">
-            About
-          </Link>
-        </li>
-      </ul>
-    </div>
-  );
-}
 export default function RootLayout({
   children,
 }: {
@@ -59,12 +29,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${inter.variable}`}>
-        <SideNav />
-        <div className="ml-64 flex-1">
-          {" "}
-          <TopNav />
-          {children}
-        </div>
+        <TopNav />
+        {children}
       </body>
     </html>
   );
