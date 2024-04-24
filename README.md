@@ -31,10 +31,11 @@ Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 ## TODO
 
 - [x] Make it deploy (Vercel)
-- [] Make some UI
+- [x] Make some UI
 - [] Set up database (Vercel postgres)
 - [] Attach UI to database
-- [] Add auth (w/clerck)
+- [x] Add auth (w/clerck)
+- [x] Add Chadcn/ui
 - [] Error manangment (w/ sentry)
 - [] Routing/page (paralell route)
 - [] Analytics (posthog)
