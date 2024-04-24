@@ -8,6 +8,7 @@ import {
 import "~/styles/globals.css";
 
 import { Inter } from "next/font/google";
+import StyledButton from "~/components/StyledButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,10 +30,16 @@ function TopNav() {
       <div>NullKarbo</div>
       <div>
         <SignedOut>
-          <SignInButton />
+          <StyledButton>
+            <SignInButton> Logg Inn</SignInButton>
+          </StyledButton>
         </SignedOut>
         <SignedIn>
-          <UserButton />
+          <div className="flex gap-4">
+            {" "}
+            <UserButton />
+            <StyledButton>Ny Post</StyledButton>
+          </div>
         </SignedIn>
       </div>
     </nav>

@@ -4,6 +4,9 @@ export default function HomePage() {
       {" "}
       {/* Added padding-top for TopNav */}
       <h1 className="text-4xl font-bold text-gray-800">Animalsk</h1>
+      <p className="text-primary text-2-xl">
+        Skriv litt om dette prosjektet her
+      </p>
     </main>
   );
 }
